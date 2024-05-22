@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+        .navbar{
+            border: 1px solid gainsboro;
+            display: flex;
+            justify-content: space-evenly;
+            padding: 10px;
+        }
+
+        .navbar > a{
+            text-decoration: none;
+            padding: 20px;
+        }
+
+        .navbar > a:hover{
+            color:white;
+            border-radius: 10px;
+            background-color: black;
+        }
+
+
+        .login{
+            margin:auto;
+            border: 1px solid gray;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            width: 250px;
+        }
+
+        .login > input{
+            margin-bottom: 20px;
+            padding: 10px;
+        }
+
+        .login > a{
+            margin: auto;
+            border: 1px solid gray;
+            padding: 5px;
+            border-radius: 5px;
+            background-color: green;
+            color:white;
+        }
+
+
+</style>
+
+</head>
+<body>
+
+
+    <div id="navbar" class="navbar">
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Products</a>
+        <a href="">Login</a>
+    </div>
+
+    <br/>
+    <br/>
+
+    <div class="login">
+        <input type="text" placeholder="Enter your name" />
+        <input type="password" placeholder="Enter you password" />
+
+        <a>Submit</a>
+
+
+    </div>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+<style>
+
+    body{
+        margin: 0px;
+        padding: 0px;
+    }
+.Nav{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    position: fixed;
+    top: 20px;
+    width: 100%;
+    margin: 0px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    text-transform: uppercase;
+}
+.Nav > a{
+    text-decoration: none;
+    font-weight: bolder;
+    padding: 5px;
+}
+
+.Nav > a:hover{
+    color:white;
+background-color: black;
+border-radius: 5px;
+}
+
+/* Sign In box css */
+
+.login{
+box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    position: absolute;
+    top: 20%;
+    right: calc(50% - 150px);
+    
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    width: 300px;
+}
+
+.login h2{
+    margin: auto;
+}
+
+.login > input{
+    padding:10px;
+    border-radius: 10px;
+
+}
+
+.login > button{
+background-color: green;
+padding: 10px;
+color: white;
+font-weight: bolder;
+margin: auto;
+border-radius: 10px;
+
+}
+.login > button:hover{
+    background-color: rgba(0, 128, 0, 0.79);
+}
+
+</style>
+
+</head>
+<body>
+    <marquee>Welcome to Red & White Multimedia Eduction </marquee>
+    <div class="Nav"> 
+        <a href=""> Home </a>
+        <a href="product.html"> Products </a>
+        <a href=""> Cart </a>
+        <a href="index.html"> Login </a>
+    </div>
+
+    <div class="login">
+        <h2>LOGIN</h2>
+        <input id="name"  type="text" placeholder  ="Enter your name" />
+        <input id="userid"  type="text" placeholder="Enter your userid" />
+        <input id="password" type = "text" placeholder="Enter your password" />
+
+        <button onclick="login()">Submit</button>
+    </div>
+</body>
+
+<script>
+    function login() {
+
+        let name = document.getElementById("name").value;
+        let userid = document.getElementById("userid").value;
+        let password = document.getElementById("password").value;
+        
+        if(name == "Alishan Shaikh" 
+        &&
+         userid == "alishanshaikh" &&
+          password == "alishan9890"){
+            window.open = "product.html"
+        }
+        else{
+            alert("Invalide Credential")
+        }
+
+    }
+
+</script>
+
+
+
+</html>
+
+
